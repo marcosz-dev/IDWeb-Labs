@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 3em;
+    font-family: "Old English Text MT", "Goudy Old", serif;
+    float: left;
+    line-height: 0.5;
+    margin-right: 8px;
+    color: darkred;
+}
+
+::selection {
+    background: yellow;
+    color: red;
+}
+
+.servicios {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Flecha antes del titulo */
+.servicios::after {
+    content: "<---";
+    color: green;
+}
+
+/* Mejoras visuales para index */
+main {
+    background-color: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #228B22;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #8B4513;
+    border-left: 4px solid #228B22;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(34, 139, 34, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+figure img {
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Suscripción a Boletín - Laboratorio 06</title>
+</head>
+<body>
+
+    <header>
+        <h1>Suscripción al Boletín de Noticias</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Suscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Formulario de Suscripción</h2>
+        <form action="#" method="post">
+            
+            <div>
+                <label for="nombre_completo">Nombre completo:</label><br>
+                <input 
+                    type="text" 
+                    id="nombre_completo" 
+                    name="nombre_completo" 
+                    placeholder="Escribe tu nombre y apellido"
+                    required> </div>
+            
+            <br>
+            
+            <div>
+                <label for="correo_electronico">Correo electrónico:</label><br>
+                <input 
+                    type="email" 
+                    id="correo_electronico" 
+                    name="correo_electronico" 
+                    placeholder="ejemplo@dominio.com"
+                    required>
+            </div>
+            
+            <br>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    id="acepto_promociones" 
+                    name="promociones" 
+                    value="si">
+                <label for="acepto_promociones">Acepto recibir correos promocionales</label>
+            </div>
+
+            <br>
+            
+            <button type="submit">Suscribirse</button>
+            
+            <button type="reset">Resetear</button>
+
+        </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+div p {
+    color: blue;
+}
+
+h2 + p {
+    color: red !important;
+}
+
+h2 ~ p {
+    color: greenyellow;
+}
+
+/* Mejora visual de selectores */
+body {
+    background-color: #faf8f3;
+    font-family: Georgia, serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #8B4513;
+    text-align: center;
+    border-bottom: 3px solid #228B22;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(139, 69, 19, 0.1);
+}
+
+p {
+    line-height: 1.8;
+    padding: 10px;
+    border-radius: 4px;
+}

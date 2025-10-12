@@ -1,0 +1,53 @@
+/* Alterna los colores de las filas pares con impares, usar gris */
+li:nth-child(odd) {
+    background-color: #eee;
+}
+li:nth-child(even) {
+    background-color: #ccc;
+}
+
+/* Agrega los caracteres ==> al inicio de cada tarea */
+li::before {
+    content: "==> ";
+}
+
+/* Al pasar el mouse, cambia el puntero y el fondo a gris claro */
+li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Cuando una tarea esté marcada como “hecha”, muestra los caracteres \/ al final */
+.hecha::after {
+    content: " \\/";
+}
+
+/* Mejora visual de tareas */
+body {
+    background-color: #f5f5f0;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    background: linear-gradient(135deg, #228B22, #32CD32);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+ol {
+    background-color: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px 30px 30px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Clase para tareas completadas */
+.hecha {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

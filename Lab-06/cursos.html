@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción a Cursos - Laboratorio 06</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de Inscripción a Curso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Suscripción</a></li>
+                <li><a href="lenguajes.html">Preferencias</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Datos de Inscripción</h2>
+        <form action="#" method="post">
+            
+            <div>
+                <label for="nombre_curso">Nombre:</label>
+                <input type="text" id="nombre_curso" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="apellido_curso">Apellido:</label>
+                <input type="text" id="apellido_curso" name="apellido" required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="documento">Documento de identidad:</label>
+                <input 
+                    type="text" 
+                    id="documento" 
+                    name="documento" 
+                    placeholder="DNI"
+                    pattern="[0-9]{8}"
+                    title="Ingrese solo números"
+                    required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="correo_curso">Correo electrónico:</label>
+                <input type="email" id="correo_curso" name="correo" required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="curso_select">Selección de curso:</label>
+                <select id="curso_select" name="curso" required>
+                    <option value="" disabled selected>-- Seleccione un curso --</option>
+                    <option value="web_dev">Desarrollo Web (HTML/CSS/JS)</option>
+                    <option value="python_data">Python para Datos</option>
+                    <option value="java_se">Introducción a Java</option>
+                </select>
+            </div>
+            <br>
+            
+            <div>
+                <label>Modalidad:</label><br>
+                <input type="radio" id="presencial" name="modalidad" value="Presencial" required>
+                <label for="presencial">Presencial</label>
+                
+                <input type="radio" id="virtual" name="modalidad" value="Virtual">
+                <label for="virtual">Virtual</label>
+            </div>
+            <br>
+            
+            <div>
+                <label>Horarios disponibles:</label><br>
+                <input type="checkbox" id="mañana" name="horario" value="Mañana">
+                <label for="mañana">Mañana</label>
+                
+                <input type="checkbox" id="tarde" name="horario" value="Tarde">
+                <label for="tarde">Tarde</label>
+                
+                <input type="checkbox" id="noche" name="horario" value="Noche">
+                <label for="noche">Noche</label>
+            </div>
+            <br>
+            
+            <div>
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea 
+                    id="comentarios" 
+                    name="comentarios" 
+                    rows="4" 
+                    placeholder="Escribe aquí cualquier nota o duda."></textarea>
+            </div>
+            <br>
+            
+            <button type="submit">Enviar Inscripción</button>
+            <button type="reset">Restablecer</button>
+
+        </form>
+    </section>
+
+</body>
+</html>

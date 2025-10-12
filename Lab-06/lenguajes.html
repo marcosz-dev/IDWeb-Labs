@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferencias - Laboratorio 06</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de Preferencias</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Suscripción</a></li>
+                <li><a href="lenguajes.html">Preferencias</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Configura tus preferencias de programación</h2>
+        <form action="#" method="post">
+            
+            <div>
+                <label for="foto_perfil">Foto de perfil:</label><br>
+                <input type="file" id="foto_perfil" name="foto_perfil">
+            </div>
+            
+            <br>
+            
+            <div>
+                <label>¿Qué lenguajes conoces? (Selecciona todos los que apliquen)</label><br>
+                <input type="checkbox" id="html" name="lenguajes" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="lenguajes" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="javascript" name="lenguajes" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" id="python" name="lenguajes" value="Python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="java" name="lenguajes" value="Java">
+                <label for="java">Java</label>
+            </div>
+
+            <br>
+            
+            <div>
+                <label for="horas_estudio">¿Cuántas horas de programación estudias al día?</label><br>
+                <input 
+                    type="number" 
+                    id="horas_estudio" 
+                    name="horas_estudio" 
+                    min="0" 
+                    max="16" 
+                    value="1" 
+                    required>
+                </div>
+            
+            <br>
+            
+            <button type="submit">Guardar</button>
+
+        </form>
+    </section>
+
+</body>
+</html>

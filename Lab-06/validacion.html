@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación - Laboratorio 06</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario con Validaciones</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Suscripción</a></li>
+                <li><a href="lenguajes.html">Preferencias</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Registro de Usuario</h2>
+        <form action="#" method="post">
+            
+            <div>
+                <label for="email_val">Correo electrónico:</label><br>
+                <input 
+                    type="email" 
+                    id="email_val" 
+                    name="email_val" 
+                    placeholder="tucorreo@ejemplo.com"
+                    required>
+                </div>
+            
+            <br>
+            
+            <div>
+                <label for="clave_val">Contraseña (6-12 caracteres):</label><br>
+                <input 
+                    type="password" 
+                    id="clave_val" 
+                    name="clave_val" 
+                    placeholder="Mínimo 6 caracteres"
+                    minlength="6"
+                    maxlength="12"
+                    required>
+                </div>
+            
+            <br>
+            
+            <div>
+                <label for="confirma_clave">Confirmar Contraseña:</label><br>
+                <input 
+                    type="password" 
+                    id="confirma_clave" 
+                    name="confirma_clave" 
+                    placeholder="Repite la contraseña"
+                    required>
+                </div>
+            
+            <br>
+
+            <div>
+                <label for="codigo_postal">Código Postal (5 dígitos):</label><br>
+                <input 
+                    type="text" 
+                    id="codigo_postal" 
+                    name="codigo_postal" 
+                    placeholder="Ej. 15001"
+                    pattern="[0-9]{5}"
+                    title="Debe ser un código de 5 dígitos numéricos"
+                    required>
+                </div>
+
+            <br>
+            
+            <button type="submit">Validar y Registrar</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
