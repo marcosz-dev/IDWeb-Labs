@@ -1,0 +1,317 @@
+
+/* --- Estilos Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro principal */
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la altura de la ventana */
+}
+
+.main-content {
+    flex-grow: 1; /* Esta propiedad "empuja" el footer hacia abajo */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Encabezado y Navegación --- */
+.header {
+    background-color: #333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #ffffff; /* Texto claro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-main a {
+    color: #ffffff; /* Texto claro */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.nav-main a:hover {
+    text-decoration: underline;
+}
+
+/* --- Pie de Página --- */
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* --- Estilos para las Secciones (Servicios, Portafolio, etc.) --- */
+.section-container {
+    padding: 60px 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+.section-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #333; /* Texto oscuro */
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555; /* Texto gris */
+    margin-bottom: 40px;
+}
+
+/* --- Botones --- */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Botón del Hero (Blanco con texto verde) */
+.btn-primary {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #5cb85c; /* Texto verde */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Botón de Formulario (Oscuro con texto blanco) */
+.btn-dark {
+    width: 100%;
+    background: #333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+
+/* --- ESTILOS POR PÁGINA --- */
+
+/* --- Página: index.html --- */
+.hero {
+    background-color: rgb(56, 56, 155); /* Fondo azul suave*/
+    color: #ffffff; /* Texto claro */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #e8eff0; /* Tarjeta tono azul */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+    color: rgb(56, 56, 155); /* Título azul */
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555; /* Texto gris */
+}
+
+/* --- Página: servicios.html --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #e8eff0; /* Tarjeta tono azul */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.service-card h3 {
+    color: rgb(56, 56, 155); /* Título azul */
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555; /* Texto gris */
+}
+
+/* --- Página: portafolio.html --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #e8eff0; /* Tarjeta tono azul */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    color: rgb(56, 56, 155); /* Título azul */
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555; /* Texto gris */
+}
+
+/* --- Página: nosotros.html --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #e8eff0; /* Tarjeta tono azul */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.team-card h3 {
+    color: rgb(56, 56, 155);/* Título vazul*/
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555; /* Texto gris */
+}
+
+/* --- Página: contacto.html --- */
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #e8eff0; /* Tarjeta tono azul */
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: none; /* Ocultamos la etiqueta, el placeholder es suficiente */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* --- Estilos Responsivos --- */
+
+/* Para tablets y dispositivos más pequeños */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-main a {
+        margin: 0 10px;
+    }
+
+    /* Hacer que todas las grillas sean de 1 columna */
+    .features-grid,
+    .services-grid,
+    .portfolio-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 480px) {
+    .nav-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-main a {
+        margin: 0 5px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
