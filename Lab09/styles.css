@@ -1,0 +1,142 @@
+/* Estilos generales*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+h1,h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+a{
+    display: block;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a:hover { background-color: #005fa3; }
+
+/* INDEX */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* BOXMODEL */
+.contenedor-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.tarjeta {
+  background-color: white;
+  border: 2px solid #0077cc;
+  padding: 20px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* GRIDFLEX */
+.blog-grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+header { grid-area: header; background: #0077cc; color: white; padding: 10px; }
+nav { grid-area: nav; background: #b3d9ff; padding: 10px; }
+.main-flex {
+  grid-area: main;
+  display: flex;
+  gap: 10px;
+}
+article {
+  flex: 1;
+  border: 1px solid #0077cc;
+  padding: 10px;
+  background: white;
+}
+aside { grid-area: aside; background: #e6f2ff; padding: 10px; }
+footer { grid-area: footer; background: #0077cc; color: white; padding: 10px; }
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.galeria div {
+  border: 2px solid #0077cc;
+  padding: 5px;
+  background: white;
+}
+.galeria img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* DASHBOARD */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+}
+.sidebar {
+  background: #0077cc;
+  color: white;
+  padding: 20px;
+}
+.contenido {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.contenido .tarjeta {
+  background: white;
+  border: 2px solid #0077cc;
+  padding: 20px;
+  flex: 1 1 200px;
+  border-radius: 8px;
+}
+
+/* LANDING PAGE */
+.landing-grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 10px;
+  text-align: center;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0077cc, #00bfff);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+.hero button {
+  background: white;
+  color: #0077cc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.hero button:hover { background: #e6e6e6; }
