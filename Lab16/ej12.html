@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+    <style>
+        #cuadro {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: relative;
+        }
+        .mover {
+            animation: moverX 2s forwards;
+        }
+        @keyframes moverX {
+            from { left: 0; }
+            to { left: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <h2>Animación</h2>
+
+    <div id="cuadro"></div>
+    <button id="btnMover">Mover</button>
+    <button id="btnReiniciar">Reiniciar</button>
+
+    <script src="ej12.js"></script>
+</body>
+</html>
